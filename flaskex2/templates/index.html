@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block body %}
+<h1>Even or Odd:</h1>
+<form action = "/calculate">
+    <label for="number">Enter a Number: </label>
+    <br>
+    <input type = "text" id="number" name="number">
+    <br>
+    <input type="submit" value = "Submit">
+</form>
+{% endblock %}

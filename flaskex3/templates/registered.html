@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mb-4">Registered Students</h1>
+<p class="mb-4">The following students have registered for the student organization.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Organization</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, org in registered_users.items() %}
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ org }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

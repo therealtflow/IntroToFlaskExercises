@@ -1,0 +1,9 @@
+python or python3 downloaded on your device
+pip or pip3 downloaded on your device
+Flask downloaded on your device
+flask_sqlalchemy downloaded on your device
+
+::: in order to lauch the program you will use the command:::
+python3 app.py
+or 
+python app.py
